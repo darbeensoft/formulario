@@ -1,0 +1,218 @@
+<!-- Header 
+
+<div id="header" ng-include="'views/common/header.html'"></div>-->
+<!-- Navigation 
+<aside id="menu" ng-include="'views/common/navigation.html'"></aside>-->
+<!-- Main Wrapper -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<div id="">
+  <div >
+    <div ng-controller="wizardOneCtrl">
+  <div class="row" align="center">
+  <div class="col-lg-4"></div>
+    <div class="col-lg-4" align="center">
+      <div class="hpanel">
+       <div class="panel-body" style="background:#F4F4F4;" >
+       <div class="row">
+       	<div class="col-lg-12 ">
+        
+       </div>
+   <div class="panel-body"  >
+        
+         
+         
+        
+          <form name="simpleForm" novalidate id="simpleForm">
+           <!-- <div class="text-center m-b-md"> <a ng-click="wizard.show(1)" class="btn" ng-class="{ 'btn-primary': step == 1, 'btn-default': step != 1}">Forma 1 - Personal data</a> <a ng-click="wizard.show(2)" class="btn" ng-class="{ 'btn-primary': step == 2, 'btn-default': step != 2}">Step 2 - Payment data</a> <a ng-click="wizard.show(3)" class="btn" ng-class="{ 'btn-primary': step == 3, 'btn-default': step != 3}">Step 3 - Approval</a> </div>-->
+           
+            <div ng-show="step == 1" class="p-m"><i class="pe-7s-id fa-5x text-muted"></i>
+              <br />
+<!--  <div class="panel-body" >-->
+            
+              <div class="row">
+              
+                <div class="col-lg-12 text-center"> <!--<i class="pe-7s-user fa-5x text-muted"></i>-->
+                  <p class="" align="left"> <strong>1. Personal Information</strong> 
+                </div>
+                </div>
+                
+                <div class="panel-body" style="background:#F4F4F4;">
+                
+                <div class="row">
+                
+                <div class="col-lg-12">
+                  <div class="row">
+                    <div class="form-group col-lg-12">
+                      <label>Name *</label>
+                      <input type="" value="" id="" class="form-control" ng-model="" placeholder="input text">
+                    </div>
+                    <div class="form-group col-lg-12">
+                      <label>E-mail *</label>
+                      <input type="text" value="" id="" class="form-control" name="" placeholder="input text" ng-model="">
+                    </div>
+                    <div class="form-group col-lg-12">
+                      <label>Phone</label>
+                      <input type="text" value="" id="" class="form-control" name="" placeholder="input text" ng-model="user.company">
+                    </div>
+                    
+                    <div class="form-group col-lg-12">
+                      <label> <h6>Are you interested in Freight Factoring</h6></label>
+                                                   
+                <select class="form-control" name="account">
+                  <option>Drop Down
+                  <option>option 2
+                  <option>option 3
+                  <option>option 4
+                </select>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+                
+              </div>
+              </div>
+              
+              
+            </div>
+           <!-- </div>4-->
+            
+            
+            
+            
+           
+            <div ng-show="step == 2" class="p-m"><i class="pe-7s-id fa-5x text-muted"></i>
+            
+          <!--  <div class="panel-body" >-->
+            
+              <div class="row">
+              
+                <div class="col-lg-12 text-center"> <!--<i class="pe-7s-user fa-5x text-muted"></i>-->
+                  <p class="" align="left"> <strong>2. Company Information</strong> 
+                </div>
+                </div>
+                
+                <div class="panel-body" style="background:#F4F4F4;">
+                
+                <div class="row">
+                
+                <div class="col-lg-12">
+                  <div class="row">
+                    <div class="form-group col-lg-12">
+                      <label>Legal Name</label>
+                      <input type="" value="" id="" class="form-control" ng-model="" placeholder="input text">
+                    </div>
+                    <div class="form-group col-lg-12">
+                      <label>Address</label>
+                      <input type="text" value="" id="" class="form-control" name="" placeholder="input text" ng-model="">
+                    </div>
+                    <div class="form-group col-lg-12">
+                      <label>Zip Code</label>
+                      <input type="text" value="" id="" class="form-control" name="" placeholder="input text" ng-model="user.company">
+                    </div><br /><br />
+                    
+                  
+                    
+                  </div>
+                </div>
+                
+                
+              </div>
+              </div>
+              
+              
+            </div>
+            
+            
+            
+            
+ <div ng-show="step == 3" class="p-m"><i class="pe-7s-id fa-5x text-muted"></i>
+            
+          <!--  <div class="panel-body" >-->
+            
+              <div class="row">
+              
+                <div class="col-lg-12 text-center"> <!--<i class="pe-7s-user fa-5x text-muted"></i>-->
+                  <p class="" align="left"> <strong>3. Freight Information</strong> 
+                </div>
+                </div>
+                
+                <div class="panel-body" style="background:#F4F4F4;">
+                
+                <div class="row">
+                
+                <div class="col-lg-12">
+                  <div class="row">
+                    <div class="form-group col-lg-12">
+                      <label>Organization Type</label>
+                      <input type="" value="" id="" class="form-control" ng-model="" placeholder="input text">
+                    </div>
+                    <div class="form-group col-lg-12">
+                      <label>Authority Type</label>
+                      <input type="text" value="" id="" class="form-control" name="" placeholder="input text" ng-model="">
+                    </div>
+                    <div class="form-group col-lg-12">
+                      <label>Aquipment Type</label>
+                      <input type="text" value="" id="" class="form-control" name="" placeholder="input text" ng-model="user.company">
+                    </div>
+                    
+                      <div class="form-group col-lg-12">
+                      <label>Motor Carrier No.</label>
+                      <input type="" value="" id="" class="form-control" ng-model="" placeholder="input text">
+                    </div>
+                    <div class="form-group col-lg-12">
+                      <label>USDOT No.</label>
+                      <input type="text" value="" id="" class="form-control" name="" placeholder="input text" ng-model="">
+                    </div>
+                    <div class="form-group col-lg-12">
+                      <label>No. Of Trucks</label>
+                      <input type="text" value="" id="" class="form-control" name="" placeholder="input text" ng-model="user.company">
+                    </div>
+                    
+                    <div class="form-group col-lg-12">
+                      <label>Zip Please Upload Drive Li</label>
+                      cense:
+                      <input type="text" value="" id="" class="form-control" name="" placeholder="input text" ng-model="user.company">
+                    </div>
+                    
+                    
+                  
+                    
+                  </div>
+                </div>
+                
+                
+              </div>
+              </div>
+              
+              
+            </div>            
+            
+            <div class="text-right m-t-xs">
+              <button ng-click="wizard.prev()" ng-disabled="step == 1" class="btn btn-default">Previous</button>
+              <button ng-click="wizard.next()" ng-disabled="step == 3" ng-hide="step == 3" class="btn btn-default">Next</button>
+              <button ng-click="submit()" ng-show="step == 3" class="btn btn-success" ng-disabled="">Submit</button>
+            </div>
+            
+            
+            <div class="m-t-md">
+              <!--<p> <strong>ng-model</strong> data of <strong>USER</strong> </p>
+              <pre>
+<!--{{user | json}}
+                            </pre>-->
+            </div>
+          </form>
+          
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+  
+  
+  <!-- Right sidebar 
+  <div id="right-sidebar" ng-include="'views/common/right_sidebar.html'" class="sidebar-open" ng-show="rightSidebar"></div>-->
+  <!-- Footer 
+  <footer class="footer" ng-include="'views/common/footer.html'"></footer>-->
+</div>
